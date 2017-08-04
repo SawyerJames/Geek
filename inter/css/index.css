@@ -1,0 +1,231 @@
+/**** slider轮播图 ************************************************/
+
+#slider_container {
+    width: 100%;
+    height: 23rem;
+    background-color: #C1C1C1;
+    border-bottom: 1px solid #B2B2B2;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/*****导航*********************************************************/
+
+nav {
+    width: 1200px;
+    height: 7rem;
+    margin: 0 auto;
+}
+
+#nav_ul {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#nav_ul li {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .3rem 1rem;
+    background: #fff;
+    border-radius: 1rem;
+    color: #1296db;
+    cursor: pointer;
+}
+
+#nav_ul li a {
+    display: block;
+    font-size: 0.875rem;
+    color: #606060;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+    text-decoration: none;
+}
+
+#nav_ul li a:hover {
+    color: #1296db;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+    text-decoration: none;
+}
+
+
+/*精选*/
+
+#nav_ul li.choice {
+    background: #FF5252;
+}
+
+#nav_ul li.choice a {
+    color: #fff;
+}
+
+
+/*精选end*/
+
+#nav_ul li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+}
+
+
+/*文章容器***********************************************/
+
+#postContainer {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto 2rem;
+}
+
+.post {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 21rem;
+    margin: 0 1rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+.post_label {
+    position: absolute;
+    bottom: 8.5rem;
+    left: .6rem;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: .1rem .6rem;
+    border-radius: .2rem;
+    background: rgba(0, 0, 0, .5);
+}
+
+.post_img {
+    width: 100%;
+    height: 220px;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.post_title {
+    font-weight: normal;
+    font-size: .9rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+.post_msg {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    font-size: .75rem;
+}
+
+.post_msg_number,
+.post_msg_like,
+.post_msg_comment {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -ms-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post_msg_number img,
+.post_msg_comment img,
+.post_msg_like img {
+    width: 1rem;
+    height: 1rem;
+    margin: -2px 5px 0 0;
+}
+
+
+/*加载更多**********************************************/
+
+#getMoreContainer {
+    width: 1180px;
+    height: 3rem;
+    margin: 4rem auto 8rem;
+}
+
+#getMore {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    background: #9F9F9F;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+#getMore:hover {
+    background: #8B8B8B;
+    -webkit-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}

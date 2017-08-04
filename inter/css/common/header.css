@@ -1,0 +1,223 @@
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    min-width: 1250px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #EFEFEF;
+}
+
+/*父级容器********************************************************/
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+/*头部最外层容器**************************************************/
+
+#header_hack {
+    width: 100%;
+    height: 4.6875rem;
+}
+
+#header_container {
+    width: 100%;
+    height: 4.6875rem;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid #DDDDDD;
+    position: fixed;
+    top: 0;
+}
+
+
+/*头部->导航容器，宽度65%居中*/
+
+header {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100%;
+    line-height: 4.6875rem;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+/*头部容器的h3下面a的通用样式*/
+
+header h3 a {
+    height: auto;
+    color: #606060;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+
+header h3 a:hover {
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+
+
+/*导航左侧*/
+
+header .header_nav_left {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
+
+
+/*logo*/
+
+header .header_nav_left>a{
+    -ms-align-self: center;
+    align-self: center;
+    width: 6.25rem;
+    height: 3rem;
+}
+header .header_nav_left>a img{
+    -ms-align-self: center;
+    align-self: center;
+    width: 6.25rem;
+    height: 3rem;   
+}
+
+/*logo end*/
+
+header .header_nav_left h3 {
+    height: 3rem;
+    margin-bottom: 1rem;
+    -ms-align-self: center;
+    align-self: center;
+}
+
+
+/*导航右侧*/
+
+header .header_nav_right {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+
+/*input表单提交*/
+
+header .header_nav_right form {
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-self: flex-end;
+    align-self: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1.1rem;
+    height: 2rem;
+    line-height: 2rem;
+    width: 12rem;
+    border-radius: 1rem 0 0 1rem;
+    background-color: #E9E9E9;
+}
+
+header .header_nav_right form img {
+    padding-left: .5rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    -ms-align-self: center;
+    align-self: center;
+}
+
+header .header_nav_right input {
+    width: 10rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border: none;
+    font-size: 0.75rem;
+    background-color: #E9E9E9;
+    outline: none;
+}
+
+
+/*右侧表单提交end*/
+
+header .header_nav_right h3 {
+    width: auto;
+    height: 3rem;
+    -ms-align-self: center;
+    align-self: center;
+    margin-bottom: 1rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+header .header_nav_right h3 img {
+    height: 1rem;
+    width: 1rem;
+    margin-bottom: .2rem;
+    -ms-align-self: flex-end;
+    align-self: flex-end;
+}
+
+
+/*切换游戏版按钮*/
+
+header .header_nav_right .tabGame {
+    display: block;
+    width: 9rem;
+    height: 2rem;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+    text-align: center;
+    background: #1296db;
+    color: #fff;
+    font-weight: bold;
+    font-size: .95rem;
+    border-radius: 1rem;
+}

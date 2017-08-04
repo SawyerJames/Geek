@@ -5,68 +5,334 @@
     <meta charset="UTF-8">
     <title>极客主义</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="root/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="root/css/lib/slider.css">
-    <link rel="stylesheet" type="text/css" href="root/css/index/index.css">
+    <link rel="stylesheet" type="text/css" href="inter/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="inter/css/lib/slider.css">
+    <link rel="stylesheet" type="text/css" href="inter/css/index.css">
+    <link rel="stylesheet" type="text/css" href="inter/css/common/header.css">
+    <link rel="stylesheet" type="text/css" href="inter/css/common/footer.css">
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div id="header_container">
-        <header id="header">
-            <div class="header_nav_left">
-                <img src="" alt="Geek科技版">
-                <h3><a href="">科技版</a></h3>
-                <h3><a href="">潮物店</a></h3>
-                <h3><a href="">约服务</a></h3>
-                <h3><a href="">广告位</a></h3>
-            </div>
-            <div class="header_nav_right">
-                <form>
-                    <img src="root/images/common/search.png">
-                    <input name="search" id="search" placeholder="搜索你想知道的技术吧"></input>
-                </form>
-                <h3><img src="root/images/common/qq.png"><a href="">登录</a></h3>
-                <h3><a class="tabGame" href="">切换至游戏版</a></h3>
-            </div>
-        </header>
-    </div>
-    <!-- 轮播图 -->
-    <div id="slider_container">
-        <div class="slider" id="slider">
-            <div class="slider-inner">
-                <div class="item">
-                    <img class="img" src="root/images/index/1.png">
+    <div id="container">
+        <!-- 头部 -->
+        <div id="header_hack"></div>
+        <div id="header_container">
+            <header id="header">
+                <div class="header_nav_left">
+                    <a href="index.html"><img src="inter/images/common/logo.png" alt="Geek科技版"></a>
+                    <h3><a href="index.html">科技版</a></h3>
+                    <h3><a href="inter/html/shop.html">潮物店</a></h3>
+                    <h3><a href="inter/html/service.html" target="_blank">约服务</a></h3>
+                    <h3><a href="inter/html/adv.html" target="_blank">广告位</a></h3>
                 </div>
-                <div class="item">
-                    <img class="img" src="root/images/index/2.png">
+                <div class="header_nav_right">
+                    <form>
+                        <img src="inter/images/common/search.png">
+                        <input name="search" id="search" placeholder="搜索你想知道的技术吧"></input>
+                    </form>
+                    <h3><img src="inter/images/common/qq.png"><a href="#">登录</a></h3>
+                    <h3><a class="tabGame" href="game/index.html">切换：游戏资讯版</a></h3>
                 </div>
-                <div class="item">
-                    <img class="img" src="root/images/index/3.png">
+            </header>
+        </div>
+        <!-- 轮播图 -->
+        <!-- 轮播图的每一张图为1000*300规格 -->
+        <div id="slider_container">
+            <div class="slider" id="slider">
+                <div class="slider-inner">
+                    <div class="item">
+                        <img class="img" src="inter/images/index/slider_1.jpg">
+                    </div>
+                    <div class="item">
+                        <img class="img" src="inter/images/index/slider_2.jpg">
+                    </div>
+                    <div class="item">
+                        <img class="img" src="inter/images/index/slider_3.jpg">
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- 导航 -->
+        <nav id="nav">
+            <ul id="nav_ul">
+                <li class="choice">
+                    <a href="#">精选</a>
+                </li>
+                <li>
+                    <img src="inter/images/index/nav_1.png">
+                    <a href="#">大思想</a>
+                </li>
+                <li>
+                    <img src="inter/images/index/nav_2.png">
+                    <a href="#">学前端</a>
+                </li>
+                <li>
+                    <img src="inter/images/index/nav_3.png">
+                    <a href="#">弄后台</a>
+                </li>
+                <li>
+                    <img src="inter/images/index/nav_4.png">
+                    <a href="#">爱设计</a>
+                </li>
+                <li>
+                    <img src="inter/images/index/nav_5.png">
+                    <a href="#">科技报</a>
+                </li>
+                <li>
+                    <img src="inter/images/index/nav_6.png">
+                    <a href="#">名品推荐</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 文章容器 -->
+        <div id="postContainer">
+            <!-- 文章列表->循环 -->
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post1.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post2.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post3.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post4.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 文章容器 -->
+        <div id="postContainer">
+            <!-- 文章列表->循环 -->
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post5.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post6.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post7.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <span class="post_label">学前端</span>
+                <a href="#">
+                    <img class="post_img" src="inter/images/index/post8.png" alt="宣传图片">
+                </a>
+                <h5 class="post_title">没有一种等待是理所当然的，如果有那是……</h5>
+                <div class="post_msg">
+                    <div class="post_msg_number">
+                        <img src="inter/images/common/number.png">
+                        <span>3541</span>
+                    </div>
+                    <div class="post_msg_like">
+                        <img src="inter/images/common/like.png">
+                        <span>102</span>
+                    </div>
+                    <div class="post_msg_comment">
+                        <img src="inter/images/common/comment.png">
+                        <span>29</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 加载更多按钮 -->
+        <div id="getMoreContainer">
+            <button type="button" id="getMore">加载更多</button>
+        </div>
+        <!-- 尾部 -->
+        <div class="anchorContainer">
+            <a href="#slider_container">
+                <img src="inter/images/common/top.png">
+            </a>
+        </div>
+        <footer id="footer">
+            <div class="footer_left">
+                <div class="footer_left_logo">
+                    <img src="inter/images/common/logo.png">
+                    <h5>极客主义，即刻启程</h5>
+                </div>
+                <ul class="footer_left_link">
+                    <li><a href="inter/html/about.html" target="_blank">关于&联系我们 CONTACT US</a></li>
+                    <li><a href="inter/html/adv.html" target="_blank">广告及服务 ADVERTISE</a></li>
+                    <li><a href="inter/html/statment.html" target="_blank">网站责任声明 PRIVACY</a></li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul class="footer_right_share">
+                    <li>
+                        <a id="shareQQ" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareSina" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareWeixin" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareQzone" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareDouban" href="#"></a>
+                    </li>
+                </ul>
+                <div class="footer_right_msg">
+                    <h5>CONTACT ME:</h5>
+                    <h5>1932880704@qq.com</h5>
+                    <h5>-OR-</h5>
+                    <h5>1334393253@qq.com</h5>
+                </div>
+            </div>
+        </footer>
     </div>
-    <!-- 导航 -->
-    <nav id="nav">
-        <ul id="nav_ul">
-            <li><a href="">精选</a></li>
-            <li><a href="">大思想</a></li>
-            <li><a href="">学前端</a></li>
-            <li><a href="">玩后台</a></li>
-            <li><a href="">爱设计</a></li>
-            <li><a href="">科技报</a></li>
-            <li><a href="">潮物志</a></li>
-            <li><a href="">名品推荐</a></li>
-        </ul>
-    </nav>
-    <!-- 文章容器 -->
-    <div id="postContainer"></div>
-    <!-- 尾部 -->
-    <footer id="footer"></footer>
     <!-- 外部库引用 -->
     <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="root/lib/slider.js"></script>
+    <script type="text/javascript" src="inter/lib/share.js"></script>
+    <script type="text/javascript" src="inter/lib/slider.js"></script>
+    <script type="text/javascript">
+    // 分享插件
+    $(function() {
+        $("#shareQQ").on("click", function() {
+            $(this).socialShare("tQQ");
+        })
+        $("#shareSina").on("click", function() {
+            $(this).socialShare("sina");
+        })
+        $("#shareWeixin").on("click", function() {
+            $(this).socialShare("weixin");
+        })
+        $("#shareQzone").on("click", function() {
+            $(this).socialShare("qZone");
+        })
+        $("#shareDouban").on("click", function() {
+            $(this).socialShare("douban");
+        })
+    });
+    </script>
 </body>
 
 </html>
