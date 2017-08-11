@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GEEK-智能搜索</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/search.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- 头部 -->
+        <div id="header_container">
+            <header id="header">
+                <div class="header_nav_left">
+                    <a href="#"><img src="../images/common/logo.png" alt="Geek科技版"></a>
+                    <h3><a href="#">科技版</a></h3>
+                    <h3><a href="#">GEEK-搜索你想要的</a></h3>
+                </div>
+            </header>
+        </div>
+        <!-- 图片容器 -->
+        <div id="imgContainer"></div>
+        <!-- 中部容器 -->
+        <div id="midContainer">
+            
+        </div>
+        <!-- 尾部 -->
+        <footer id="footer">
+            <div class="footer_left">
+                <div class="footer_left_logo">
+                    <img src="../images/common/logo.png">
+                    <h5>极客主义，即刻启程</h5>
+                </div>
+                <ul class="footer_left_link">
+                    <li><a href="contact.html" target="_blank">关于&联系我们 CONTACTUS</a></li>
+                    <li><a href="service.html" target="_blank">广告及服务 ADVERTISE</a></li>
+                    <li><a href="statment.html" target="_blank">网站责任声明 PRIVACY</a></li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul class="footer_right_share">
+                    <li>
+                        <a id="shareQQ" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareSina" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareWeixin" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareQzone" href="#"></a>
+                    </li>
+                    <li>
+                        <a id="shareDouban" href="#"></a>
+                    </li>
+                </ul>
+                <div class="footer_right_msg">
+                    <h5>CONTACT ME:</h5>
+                    <h5>1932880704@qq.com</h5>
+                    <h5><a href="http:www.geekinter.com">GEEK INTER</a></h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 外部库引用 -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/share.js"></script>
+    <script type="text/javascript">
+    // 分享插件
+    $(function() {
+        $("#shareQQ").on("click", function() {
+            $(this).socialShare("tQQ");
+        })
+        $("#shareSina").on("click", function() {
+            $(this).socialShare("sina");
+        })
+        $("#shareWeixin").on("click", function() {
+            $(this).socialShare("weixin");
+        })
+        $("#shareQzone").on("click", function() {
+            $(this).socialShare("qZone");
+        })
+        $("#shareDouban").on("click", function() {
+            $(this).socialShare("douban");
+        })
+    });
+    </script>
+</body>
+
+</html>

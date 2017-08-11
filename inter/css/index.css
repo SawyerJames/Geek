@@ -37,7 +37,9 @@ nav {
     -ms-align-items: center;
     align-items: center;
 }
-
+#nav_ul a{
+    text-decoration: none;
+}
 #nav_ul li {
     /*flex的兼容布局*/
     display: -webkit-box;
@@ -50,25 +52,25 @@ nav {
     padding: .3rem 1rem;
     background: #fff;
     border-radius: 1rem;
-    color: #1296db;
+    color: #606060;
     cursor: pointer;
 }
 
-#nav_ul li a {
+#nav_ul li span {
     display: block;
     font-size: 0.875rem;
-    color: #606060;
-    -webkit-transition: color .2s;
-    -o-transition: color .2s;
-    transition: color .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
     text-decoration: none;
 }
 
-#nav_ul li a:hover {
+#nav_ul li:hover {
+    padding: .3rem 2rem;
     color: #1296db;
-    -webkit-transition: color .2s;
-    -o-transition: color .2s;
-    transition: color .2s;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
     text-decoration: none;
 }
 
@@ -79,7 +81,7 @@ nav {
     background: #FF5252;
 }
 
-#nav_ul li.choice a {
+#nav_ul li.choice span {
     color: #fff;
 }
 

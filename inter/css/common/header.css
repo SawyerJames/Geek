@@ -77,8 +77,6 @@ header h3 a:hover {
     -o-transition: color .2s;
     transition: color .2s;
 }
-
-
 /*导航左侧*/
 
 header .header_nav_left {
@@ -115,14 +113,42 @@ header .header_nav_left>a img{
 
 /*logo end*/
 
-header .header_nav_left h3 {
+header .header_nav_left h3{
     height: 3rem;
     margin-bottom: 1rem;
     -ms-align-self: center;
     align-self: center;
 }
-
-
+header .header_nav_left .star_container{
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+header .header_nav_left h3.header_star{
+    height: 3.2rem;
+}
+header .header_star img{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 1.75rem;
+}
+header .header_star a{
+    display: inline-block;
+    height: 1rem;
+    font-weight: bold;
+    font-size: .75rem;
+    color: #FE3C3C;
+    margin-left: .5rem;
+}
 /*导航右侧*/
 
 header .header_nav_right {

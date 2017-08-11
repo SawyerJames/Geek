@@ -1,0 +1,158 @@
+/*头部hack*/
+
+#header_container {
+    position: static;
+}
+
+
+/*图片容器*/
+
+#imgContainer {
+    /*width: 1096px;*/
+    width: 100%;
+    height: 20rem;
+    background-image: url('../images/contact/bg.jpg');
+    background-size: cover;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+#imgContainer h1 {
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+/*中部容器*/
+
+#midContainer {
+    height: auto;
+    background: #fff;
+    padding: 3rem;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    color: #333;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+/*关于我们的总体介绍*/
+.text_container {
+    width: 1000px;
+    height: 15rem;
+    padding-top: 1rem;
+    border-top: .2rem solid #ddd;
+}
+
+/*关于我们->我们*/
+.manage_container {
+    width: 1000px;
+    height: 15rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+.manage_container img {
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #ddd;
+    border-radius: 10rem;
+}
+.manage_container div{
+	width: 76%;
+	height: 56%;
+	/*border: 1px solid #ddd;*/
+	padding: 2%;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.manage_container div h3{
+	font-weight: bold;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+/*关于我们->联系方式*/
+.contact_container {
+    width: 970px;
+    height: 15rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #D2D2D2;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.contact_container h3 {
+	width: 100%;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #D2D2D2;
+	font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.contact_container .contact_msg{
+	width: 100%;
+	height: 15rem;
+	margin-top: 1rem;
+    /*flex的兼容布局*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
